@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/creategifos_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Crear/Ver Mis gifos</title>
+</head>
+<body>
+    <div class= "main-container">
+        <div class="welcome_bar">
+            <p>¡Bienvenidos/as a GifOS.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="home-logo">
+            <a href="index.html" class="goto-index">
+                <img class="goback-arrow" src="assets/arrow.svg" alt="arrow_pointing_left">
+                <img class="gifos-img" src="assets/gifos_logo.png" alt="gifos_logo">
+            </a>
+        </div>
+        <section id="instructions">
+            <div class="how-to_container" id="instructions-window">
+                <div class="window-title">
+                    <p>Crear Guifos</p>
+                </div>
+                <div class="bold-title">
+                    <img src="assets/window_img.png" alt="retro-window-image">
+                    <h4>Aquí podrás crear tus propios guifos</h4>
+                </div>
+                <div class="instructive-text">
+                    <p>Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                        <br>personalizados. Los pasos para crear tu guifo son:
+                        <br><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                        <br><b>2)</b> Capturar tu momento guifo
+                        <br><b>3)</b> Revisar el momento
+                        <br><b>4)</b> Listo para subir y compartir!
+                        <br>¿Quieres comenzar a crear tu guifo ahora?</p>
+                </div>
+                <div class="button-container">
+                    <button class="decision-button" id="cancel-create"> <a>Cancelar</a> </button>
+                    <button class="decision-button" id="start-create"> <a>Comenzar</a> </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="camera-testing">
+            <div class="capture-container" id="camera-container">
+                <div class="window-title">
+                    <p>Un Chequeo Antes de Empezar</p>
+                    <img src="assets/button3.svg" alt="close_window_button">
+                </div>
+                <div class="recording-preview" id="recording-preview">
+                    <video autoplay="true" class="videoElement" id="videoElement" src=""></video>
+                </div>
+                <div class="start-capture" id="start-capture">
+                    <div class="camera-icon">
+                        <img src="./assets/camera.svg" alt="camera icon">
+                    </div>
+                    <button class="capture-btn" id="capture-btn">
+                        <a>Capturar</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recording-screen">
+            <div class="capture-container" id="recording-container">
+                <div class="window-title">
+                    <p>Capturando Tu Guifo</p>
+                    <img src="assets/button3.svg" alt="close_window_button">
+                </div>
+                <div class="recording-preview" id="gif-display">
+                    <video autoplay="true" class="videoElement" id="videoBeforeGif" src=""></video>
+                </div>
+                <div class="control-btns">
+                    <div class="counter-div" id="counterDiv">
+                        <p class="time-counter" id="timeCounter">00:00:03:06</p>
+                    </div>
+                    <div class="finish-container" id="stop-recording">
+                        <div class="record-icon">
+                            <img src="./assets/recording.svg" alt="Recording icon">
+                        </div>
+                        <button class="stop-btn" id="stop-btn">
+                            <a>Listo</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gif-preview">
+            <div class="capture-container" id="preview-container">
+                <div class="window-title">
+                    <p>Vista Previa</p>
+                    <img src="assets/button3.svg" alt="close_window_button">
+                </div>
+                <div class="recording-preview">
+                   <img class="gifElement" id="gifElement" src="" alt="Recording-gif-preview">
+                </div>
+                <div class="control-btns">
+                    <div class="counter-div" id="counterEnd">
+                        <p class="time-counter" id="endingTime">00:00:10:03</p>
+                    </div>
+                    <div class="gif-player" id="gif-player">
+                        <div class="play-btn">
+                            <img src="./assets/forward.svg" alt="play_arrow">
+                        </div>
+                        <div class="bar-container" id="bar-container">
+                            <div class="bar-item" id="bar-item"></div>
+                        </div>
+                    </div>
+                    <div class="gif-confirm">
+                        <button class="repeat-button" id="repeat-create"> <a>Repetir Captura</a> </button>
+                        <button class="upload-button" id="upload-btn"> <a>Subir Guifo</a> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gif-upload-section">
+            <div class="capture-container" id="upload-window">
+                <div class="window-title">
+                    <p>Subiendo Guifo</p>
+                    <img src="assets/button3.svg" alt="close_window_button">
+                </div>
+                <div class="recording-preview">
+                    <div class="upload-screen">
+                        <img class="globe-img" src="./assets/globe_img.png" alt="globe_image">
+                        <h4 class="upload-title">Estamos subiendo tu guifo…</h4>
+                        <div class="upload-bar" id="upbar-container">
+                            <div class="upbar-item" id="upbar-item"></div>
+                        </div>
+                        <p>Tiempo restante: <del>38 años</del> algunos minutos</p>
+                    </div>
+
+                </div>
+                <div class="upload-cancel-container">
+                    <button class="cancel-upload" id="cancel-upload"> <a>Cancelar</a> </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="confirmed-upload-section">
+            <div class="savescreen-container" id="savescreen-container">
+                <div class="savescreen-title">
+                    <p>Guifo Subido Con Éxito</p>
+                    <img src="assets/button3.svg" alt="close_window_button">
+                </div>
+                <div class="upload-content">
+                    <div class="savedgif-window" id="savedgif-window">
+                    </div>
+                    <div class="gif-options">
+                        <h4>Guifo creado con éxito</h4>
+                        <button class="copylink-btn" id="copylink-btn">Copiar Enlace Guifo</button>
+                        <button class="downloadgif-btn" id="downloadgif-btn"><a id="download-link" download="myGif.gif" target="_blank">Descargar Guifo</a></button>
+                    </div>
+                </div>
+                <div class="exit-create">
+                    <button class="end-button" id="end-button">Listo</button>
+                </div>
+            </div>
+        </section>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="customgif-container">
+            <div class="section-title">
+                <h4>Mis guifos</h4>
+            </div>
+            <div class="customgif-display" id="customgif-display"></div>
+        </div>
+    </div> <!--this is the main div-->
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/creategifos.js"></script>
+</body>
+</html>

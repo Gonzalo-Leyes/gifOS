@@ -1,0 +1,613 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container .capture-container .start-capture .capture-btn, .main-container .capture-container .upload-cancel-container .cancel-upload {
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  padding: 9px 2px;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .start-capture .capture-btn a, .main-container .capture-container .upload-cancel-container .cancel-upload a {
+  padding: 7px 15px;
+}
+
+.main-container .capture-container .start-capture .capture-btn:hover a, .main-container .capture-container .upload-cancel-container .cancel-upload:hover a {
+  padding: 7px 15px;
+}
+
+.main-container .capture-container .start-capture .capture-btn:hover span, .main-container .capture-container .upload-cancel-container .cancel-upload:hover span {
+  padding: 7px 15px;
+}
+
+.main-container .capture-container .start-capture .capture-btn:active, .main-container .capture-container .upload-cancel-container .cancel-upload:active {
+  background: #F7C9F3;
+}
+
+.main-container .capture-container .start-capture .capture-btn:active a, .main-container .capture-container .upload-cancel-container .cancel-upload:active a {
+  padding: 7px 15px;
+}
+
+.main-container .how-to_container .window-title, .main-container .capture-container .window-title, .main-container .savescreen-container .savescreen-title {
+  background: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.main-container .how-to_container .window-title p, .main-container .capture-container .window-title p, .main-container .savescreen-container .savescreen-title p {
+  width: 100%;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.main-container {
+  background-color: #fff3fd;
+}
+
+.main-container .welcome_bar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+.main-container .welcome_bar p {
+  color: #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.main-container .home-logo {
+  padding: 39px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-container .home-logo .goback-arrow {
+  padding: 10px 5px;
+}
+
+.main-container .home-logo .gifos-img {
+  padding: 0px 5px;
+}
+
+.main-container .how-to_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  width: 50vw;
+  padding: 3px;
+  margin: auto;
+}
+
+.main-container .how-to_container .bold-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 25px 12px;
+}
+
+.main-container .how-to_container .bold-title h4 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  font-size: 16px;
+  padding: 0px 16px;
+}
+
+.main-container .how-to_container .instructive-text {
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  font-size: 14px;
+  padding-left: 73px;
+}
+
+.main-container .how-to_container .button-container, .main-container .how-to_container .capture-container .control-btns .gif-confirm, .main-container .capture-container .control-btns .how-to_container .gif-confirm {
+  margin: 28px 40px 36px;
+  text-align: right;
+}
+
+.main-container .how-to_container .button-container .decision-button, .main-container .how-to_container .capture-container .control-btns .gif-confirm .decision-button, .main-container .capture-container .control-btns .how-to_container .gif-confirm .decision-button {
+  margin: 0px 7px;
+  padding: 9px 39px;
+  font-family: "Chakra Petch", sans-serif;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .how-to_container .button-container .decision-button:active, .main-container .how-to_container .capture-container .control-btns .gif-confirm .decision-button:active, .main-container .capture-container .control-btns .how-to_container .gif-confirm .decision-button:active {
+  background: #F7C9F3;
+}
+
+.main-container .capture-container {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .window-title {
+  padding: 3px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .capture-container .recording-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 8px 14px 30px 8px;
+  padding: 3px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.main-container .capture-container .recording-preview .videoElement {
+  width: 100%;
+}
+
+.main-container .capture-container .recording-preview .gifElement {
+  width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main-container .capture-container .recording-preview .upload-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 130px 250px;
+}
+
+.main-container .capture-container .recording-preview .upload-screen .globe-img {
+  width: 40px;
+  padding: 8px;
+  margin: 10px;
+}
+
+.main-container .capture-container .recording-preview .upload-screen .upload-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  margin: 0px 40px 40px;
+}
+
+.main-container .capture-container .recording-preview .upload-screen .upload-bar {
+  height: 25px;
+  width: 340px;
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+          box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+  padding: 2px;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[24];
+      grid-template-columns: repeat(24, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+.main-container .capture-container .recording-preview .upload-screen .upload-bar .upbar-item {
+  position: relative;
+  background-color: #F7C9F3;
+  border: 1px solid gray;
+}
+
+.main-container .capture-container .recording-preview .upload-screen p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px;
+  margin: 15px;
+}
+
+.main-container .capture-container .start-capture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 15px 15px 15px 80%;
+  bottom: 0;
+}
+
+.main-container .capture-container .start-capture .camera-icon {
+  text-align: center;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .start-capture .camera-icon img {
+  padding: 7px;
+}
+
+.main-container .capture-container .start-capture .capture-btn {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .start-capture .capture-btn a {
+  color: #110038;
+  border: 1px solid #F7C9F3;
+}
+
+.main-container .capture-container .start-capture .capture-btn:active {
+  background: #E6BBE2;
+}
+
+.main-container .capture-container .start-capture .capture-btn:active a {
+  color: #110038;
+  border: 1px dotted #110038;
+}
+
+.main-container .capture-container .control-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .capture-container .control-btns .counter-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin: 12px;
+}
+
+.main-container .capture-container .control-btns .counter-div .time-counter {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.main-container .capture-container .control-btns .finish-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 12px;
+}
+
+.main-container .capture-container .control-btns .finish-container .record-icon {
+  text-align: center;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  padding: 7px;
+}
+
+.main-container .capture-container .control-btns .finish-container .stop-btn {
+  font-family: "Chakra Petch", sans-serif;
+  color: #FFFFFF;
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  height: 40px;
+  width: 100px;
+}
+
+.main-container .capture-container .control-btns .gif-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .capture-container .control-btns .gif-player .play-btn {
+  text-align: center;
+  padding: 5px 10px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .control-btns .gif-player .bar-container {
+  width: 240px;
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+          box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+  padding: 2px;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[18];
+      grid-template-columns: repeat(18, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+.main-container .capture-container .control-btns .gif-player .bar-container .bar-item {
+  position: relative;
+  background-color: #F7C9F3;
+  border: 1px solid gray;
+}
+
+.main-container .capture-container .control-btns .gif-confirm .repeat-button, .main-container .capture-container .control-btns .gif-confirm .upload-button {
+  margin: 0px 10px 0px 5px;
+  padding: 9px 20px;
+  font-family: "Chakra Petch", sans-serif;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.main-container .capture-container .control-btns .gif-confirm .repeat-button:active, .main-container .capture-container .control-btns .gif-confirm .upload-button:active {
+  background: #F7C9F3;
+}
+
+.main-container .capture-container .upload-cancel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-container .capture-container .upload-cancel-container .cancel-upload {
+  padding: 10px 20px;
+  margin: 15px;
+}
+
+.main-container .savescreen-container {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.main-container .savescreen-container .savescreen-title {
+  padding: 3px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .savescreen-container .upload-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 24px;
+}
+
+.main-container .savescreen-container .upload-content .savedgif-window {
+  width: 40vw;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.main-container .savescreen-container .upload-content .savedgif-window .gif-uploaded {
+  width: 100%;
+  height: 190px;
+}
+
+.main-container .savescreen-container .upload-content .gif-options {
+  padding: 10px 20px 30px 12px;
+  width: 35vw;
+}
+
+.main-container .savescreen-container .upload-content .gif-options h4 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.main-container .savescreen-container .upload-content .gif-options .copylink-btn, .main-container .savescreen-container .upload-content .gif-options .downloadgif-btn {
+  margin: 7px 0px;
+  width: 100%;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  padding: 10px 30px;
+  color: #110038;
+}
+
+.main-container .savescreen-container .upload-content .gif-options .copylink-btn:active, .main-container .savescreen-container .upload-content .gif-options .downloadgif-btn:active {
+  background: #F7C9F3;
+  color: #110038;
+}
+
+.main-container .savescreen-container .exit-create {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 15px;
+}
+
+.main-container .savescreen-container .exit-create .end-button {
+  width: 100%;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  padding: 10px 30px;
+  color: #110038;
+}
+
+.main-container .savescreen-container .exit-create .end-button:active {
+  background: #F7C9F3;
+  color: #110038;
+}
+
+.main-container .customgif-container {
+  width: 90vw;
+  margin: 5vw;
+}
+
+.main-container .customgif-container .section-title {
+  padding: 7px;
+  font-family: "Chakra Petch", sans-serif;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.main-container .customgif-container .section-title h4 {
+  font-weight: 400;
+}
+
+.main-container .customgif-container .customgif-display {
+  width: 100%;
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.main-container .customgif-container .customgif-display .mygif-item {
+  width: 100%;
+  height: 40vh;
+}
+
+.main-container .customgif-container .customgif-display .mygif-item:nth-child(5) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+/*# sourceMappingURL=creategifos_style.css.map */

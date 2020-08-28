@@ -1,0 +1,482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;    
+}
+a {
+    text-decoration: none;
+}
+
+$light-background: #fff3fd;
+$light-gradient: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+$main-font: 'Chakra Petch', sans-serif; 
+$dark-purple: #110038;
+$dotted-border: 1px dotted $dark-purple;
+
+%light-button {
+    font-family: $main-font;
+    text-align: center;
+    padding: 9px 2px;
+    background: #FFF4FD;
+    border: 1px solid $dark-purple;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    a {
+        padding: 7px 15px;
+    }
+    &:hover {
+        a {
+            padding: 7px 15px;
+        }
+        span {
+            padding: 7px 15px;
+
+        }
+
+    }
+    &:active {
+        background: #F7C9F3;
+        a {
+            padding: 7px 15px;
+        }
+
+    }
+}
+
+%gradient-title {
+    background: $light-gradient;
+    p {
+
+        width: 100%;
+        font-family: $main-font;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+
+}
+
+.main-container {
+    background-color: $light-background;
+    .welcome_bar {
+        background-image: $light-gradient;
+        box-shadow: 0 1px 0 0 $dark-purple;
+        p {
+            color: #FFFFFF;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+    }
+    .home-logo {
+        padding: 39px 60px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .goback-arrow {
+            padding: 10px 5px;
+        }
+        .gifos-img {
+            padding: 0px 5px;
+            
+        }
+    }
+    .how-to_container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: center;
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+        width: 50vw;
+        padding: 3px;
+        margin: auto;
+
+        .window-title {
+            @extend %gradient-title;
+        }
+        .bold-title {
+            display: flex;
+            padding: 30px 25px 12px;
+            h4 {
+                font-family: $main-font;
+                color: $dark-purple;
+                font-size: 16px;
+                padding: 0px 16px;
+            }
+        }
+        .instructive-text {
+            font-family: $main-font;
+            color: $dark-purple;
+            font-size: 14px;
+            padding-left: 73px;
+        }
+        .button-container {
+            margin: 28px 40px 36px;
+            text-align: right;
+            .decision-button {
+                margin: 0px 7px;
+                padding: 9px 39px;
+                font-family: $main-font;
+                background: #FFF4FD;
+                border: 1px solid $dark-purple;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                &:active {
+                    background: #F7C9F3;
+                }
+            }
+        }
+    }
+    .capture-container {
+        width: 70vw;
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: center;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 3px;
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+        .window-title {
+            @extend %gradient-title;
+            padding: 3px 5px;
+            display: flex;
+        }
+
+        .recording-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            box-sizing: border-box;
+            margin: 8px 14px 30px 8px;
+            padding: 3px;
+            background: #FFFFFF;
+            border: 1px solid #979797;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            .videoElement {
+                width: 100%;
+
+            }
+            .gifElement {
+                width: 100%;
+                box-sizing: content-box;
+            }
+            .upload-screen {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 130px 250px;
+                .globe-img {
+                    width: 40px;
+                    padding: 8px;
+                    margin: 10px;
+                }
+                .upload-title {
+                    font-family: $main-font;
+                    font-size: 16px;
+                    color: #110038;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 22px;
+                    margin: 0px 40px 40px;
+                }
+                .upload-bar {
+                    height: 25px;
+                    width: 340px;
+                    background-color: #B4B4B4;
+                    box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+                    padding: 2px;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(24, 1fr);
+                    grid-template-rows: repeat(1, 1fr);   
+                    .upbar-item {
+                        position: relative;
+                        background-color: #F7C9F3;
+                        border:  1px solid gray;
+                    }
+                }
+                p {
+                    font-family: $main-font;
+                    font-size: 12px;
+                    color: rgba(17,0,56,0.64);
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 14px;
+                    margin: 15px;
+                }
+            }
+
+        }
+        .start-capture {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            margin: 15px 15px 15px 80%;
+            bottom: 0;
+            .camera-icon {
+                text-align: center;
+                background: #F7C9F3;
+                border: 1px solid #110038;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                img {
+                    padding: 7px;
+                }
+                
+            }
+            .capture-btn {
+                @extend %light-button;
+                background: #F7C9F3;
+                border: 1px solid $dark-purple;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                a {
+                    color: $dark-purple;
+                    border: 1px solid #F7C9F3;
+                }
+
+                &:active {
+                    background: #E6BBE2;
+                    a {
+                        color: $dark-purple;
+                        border: $dotted-border;
+                    }
+            
+                }
+
+
+            }
+        }
+        .control-btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .counter-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #FFFFFF;
+                border: 1px solid #979797;
+                box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                margin: 12px;
+                .time-counter {
+                    font-family: $main-font;
+                    font-size: 16px;
+                    color: #110038;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                }
+            }
+            .finish-container {
+                display: flex;
+                align-items: center;
+                align-self: flex-end;
+                margin: 12px;
+                .record-icon {
+                    text-align: center;
+                    background: #FF6161;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+                    padding: 7px;
+                }
+                .stop-btn {
+                    font-family: $main-font;
+                    color: #FFFFFF;
+                    background: #FF6161;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+                    height: 40px;
+                    width: 100px;
+                }
+            }
+            .gif-player {
+                display: flex;
+                
+                .play-btn {
+                    text-align: center;
+                    padding: 5px 10px;
+                    background: #F7C9F3;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                }
+                .bar-container {
+                    width: 240px;
+                    background-color: #B4B4B4;
+                    box-shadow: inset 2px 2px 0 0 #000000, inset    -2px -2px 0 0 #FFFCFC;
+                    padding: 2px;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(18, 1fr);
+                    grid-template-rows: repeat(1, 1fr);   
+                    .bar-item {
+                        position: relative;
+                        background-color: #F7C9F3;
+                        border:  1px solid gray;
+                    }
+                }
+            }
+            .gif-confirm {
+                @extend .button-container;
+                .repeat-button {
+                    margin: 0px 10px 0px 5px;
+                    padding: 9px 20px;
+                    font-family: $main-font;
+                    background: #FFF4FD;
+                    border: 1px solid $dark-purple;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                    &:active {
+                        background: #F7C9F3;
+                    }
+                }
+                .upload-button {
+                    @extend .repeat-button;
+                }
+            }
+               
+        }
+        .upload-cancel-container {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            .cancel-upload {
+                @extend %light-button;
+                padding: 10px 20px;
+                margin: 15px;
+            }
+        }
+    }
+
+    .savescreen-container{
+        width: 50vw;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 3px;
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+        .savescreen-title {
+            @extend %gradient-title;
+            padding: 3px 5px;
+            display: flex;
+        }
+        .upload-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 24px;
+            .savedgif-window {
+                width: 40vw;
+                background: #FFFFFF;
+                border: 1px solid #979797;
+                box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                .gif-uploaded {
+                    width: 100%;
+                    height: 190px;
+                    
+                }
+                
+            }
+            .gif-options{
+                padding: 10px 20px 30px 12px;
+                width: 35vw;
+                h4 {
+                    font-family: $main-font;
+                    font-size: 16px;
+                    color: #110038;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+                .copylink-btn {
+                    margin: 7px 0px;
+                    width: 100%;
+                    background: #FFF4FD;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                    font-family: $main-font;
+                    font-size: 14px;
+                    color: #110038;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 18px;
+                    padding: 10px 30px;
+                    color: $dark-purple;
+                    &:active {
+                        background: #F7C9F3;
+                        color: $dark-purple;
+                    }
+                }
+                .downloadgif-btn {
+                    @extend .copylink-btn;
+                }
+            }
+        }
+        .exit-create {
+            align-self: flex-end;
+            margin: 15px;
+
+            .end-button {
+                width: 100%;
+                background: #FFF4FD;
+                border: 1px solid #110038;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                font-family: $main-font;
+                font-size: 14px;
+                color: #110038;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 18px;
+                padding: 10px 30px;
+                color: $dark-purple;
+                &:active {
+                    background: #F7C9F3;
+                    color: $dark-purple;
+                }
+            }
+        }
+        
+
+    } 
+
+
+//----------------------Custom gif gallery-------------------------------------------
+    .customgif-container {
+        width: 90vw;
+        margin: 5vw;
+        .section-title {
+            padding: 7px;
+            font-family: $main-font;
+            background: #FFFAFE;
+            border: 1px solid #E6BBE2;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+            h4 {
+                font-weight: 400;
+            }
+        }
+        .customgif-display {
+            width: 100%;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+            
+            .mygif-item {
+                width: 100%;
+                height: 40vh;
+                &:nth-child(5) {
+                    grid-column: 1/3;
+                }
+
+            }
+
+        }
+
+    }
+
+}//this is the main container

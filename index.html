@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/daystyle_index.css">
+    <link rel="stylesheet" href="styles/nightstyle_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>gif.OS</title>
+</head>
+<body>
+    <div class="main light" id="main">
+        <div class="welcome_bar">
+            <p>¡Bienvenidos/as a GifOS.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="menu_container">
+            <div class="logo">
+                <img class="light-logo" src="assets/gifos_logo.png" alt="gifos_logo">
+                <img class="night-logo" src="assets/gifos_logo_dark.png" alt="gifos_logo">
+            </div>
+            <div class="button_container">
+                <div class="create_button_container">
+                    <button class="user_buttons"> <a href="./creategifos.html">Crear Guifos </a> </button>
+                </div>
+                <div class="dropdown-container">
+                    <div class="theme-select" id="theme-select" >
+                        <button class="choose-theme" id="choose-theme">
+                            <a>Elegir tema</a>
+                        </button>
+                        <div class="dropdown-arrow">
+                            <img src="./assets/dropdown.svg" alt="dropdown arrow">
+                        </div>
+                    </div>
+
+                    <div class="custom-options" id="custom-options">
+                        <button class="theme-button" id="day-theme"> <a><ins>S</ins>ailor Day</a> </button>
+                        <button class="theme-button" id="night-theme"> <a><ins>S</ins>ailor Night</a></button>
+                    </div>
+                </div>
+                
+                <a class="my-guifos" href="./creategifos.html"> <ins>M</ins>is guifos</a>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-title">
+                <p>Buscar</p>
+            </div>
+                <input type="search" class="searchbox" id="searchbox"  placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                <button type="button" class="search-btn" id="search"> <a href="#search"> <img src="./assets/lupa_inactive.svg" alt=""> Buscar</a></button>
+            <div class="focus_suggested" id="focus_suggested">
+                <div class="suggestion-bar">
+                    <p>Resultado de búsqueda sugerido</p>
+                </div>
+                <div class="suggestion-bar">
+                    <p>Un resultado similar de búsqueda</p>
+                </div>
+                <div class="suggestion-bar">
+                    <p>Y otro más</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="today-gifs-container">
+            <div class="section-title">
+                <h4>Hoy te sugerimos:</h4>
+            </div>
+            <div class="today-display" id="today-display"></div>
+        </div>
+
+        <div class="today-gifs-container">
+            <div class="section-title">
+                <h4>Tendencias:</h4>
+            </div>
+            <div class="trending-container" id="trending-container"></div>
+        </div>
+
+    </div> <!-- this comes from the main container -->
+    <script src="./js/mainjs.js"></script>
+</body>
+</html>
