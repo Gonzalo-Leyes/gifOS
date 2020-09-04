@@ -134,7 +134,7 @@ let recordGif = () => {
     });;  
 }
 
-
+//como indica el nombre de la funcion, guarda el gif en Local Storage para luego acceder a buscar allí los gifs a cargar en la seccion "Mis guifos".
 let saveGifInLocalStorage=(data) => {
     const gifURL = data.data.images.downsized.url;
     if (localStorage.getItem("GifsURL")) {
@@ -147,6 +147,7 @@ let saveGifInLocalStorage=(data) => {
     console.log("gif saved in local storage");
 }
 
+//funcion que, una vez subido el gif a la API, lo trae con su URL para mostrar la vista previa junto con las opciones para copiar el enlace o descargar el gif.
 let previewGif=(data) => {
     const gifPreviewUrl = data.data.images.downsized.url;
     console.log(gifPreviewUrl);
@@ -162,20 +163,24 @@ let previewGif=(data) => {
     //console.log(downloadUrl);
     let downloadLink = document.getElementById("download-link");
     downloadLink.setAttribute("href", gifPreviewUrl);
-    console.log(downloadLink, "esto es un mensaje");
+    console.log("Enlace del gif", downloadLink);
 
-    let copyLink = document.getElementById("copylink-btn");
-    copyLink.addEventListener("click", function () {
+    let copyBtn = document.getElementById("copylink-btn");
+    copyBtn.addEventListener("click", function () {
         const copyText = document.createElement("input");
-        copyText.style.display = "none";
-        copyText.value = document.getElementById("gif-uploaded").src;
+        copyText.value = gifPreviewUrl; //document.getElementById("gif-uploaded").src;
         document.body.appendChild(copyText);
         copyText.select();
         document.execCommand("copy");
+        console.log("la concha de tu hermana");
+        copyText.style.display = "none";
+
   });
 }
 
-let galleryContaier = document.getElementById ('customgif-display');
+
+
+let galleryContainer = document.getElementById ('customgif-display');
 
 function customGifGallery() {
     if (localStorage.getItem("GifsURL")) {
@@ -188,7 +193,7 @@ function customGifGallery() {
         gifImg.setAttribute("class", "mygif-item");
         gifImg.setAttribute("id", "mygif-item");
   
-        galleryContaier.appendChild(gifImg);
+        galleryContainer.appendChild(gifImg);
       });
     }
   }
@@ -295,4 +300,17 @@ displayMyGifs();
 let endButton = document.getElementById('end-button');
 endButton.addEventListener('click', function () {
     saveScreen.style.display = "none";
+    if (localStorage.getItem("GifsURL")) {
+        const gifsURL = JSON.parse(localStorage.getItem("GifsURL"));
+
+          const currentGif = gifsURL[gifsURL.length - 1];
+          const gifImg = document.createElement("IMG");
+    
+          gifImg.setAttribute("src", currentGif);
+          gifImg.setAttribute("class", "mygif-item");
+          gifImg.setAttribute("id", "mygif-item");
+    
+          galleryContainer.appendChild(gifImg);
+        
+      }
 });
