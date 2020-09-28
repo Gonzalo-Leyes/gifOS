@@ -172,7 +172,7 @@ let previewGif=(data) => {
         document.body.appendChild(copyText);
         copyText.select();
         document.execCommand("copy");
-        console.log("la concha de tu hermana");
+        console.log("link copied");
         copyText.style.display = "none";
 
   });
